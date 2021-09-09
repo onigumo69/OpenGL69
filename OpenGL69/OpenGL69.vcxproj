@@ -165,7 +165,6 @@
   <ItemGroup>
     <ClCompile Include="src\main.cpp" />
     <ClCompile Include="src\glad.c" />
-    <ClCompile Include="src\Shader.cpp" />
     <ClCompile Include="src\stb_image.cpp" />
   </ItemGroup>
   <ItemGroup>
