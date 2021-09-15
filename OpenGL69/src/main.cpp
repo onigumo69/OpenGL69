@@ -157,12 +157,27 @@ int main()
 		glClearColor(0.1f, 0.1f, 0.1f, 1.0f);
 		glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
 
-		// activate shader
+		// be sure to activate shader when setting uniforms/drawing objects
 		phongShader.use();
-		phongShader.setVec3("objectColor", 1.0f, 0.5f, 0.31f);
-		phongShader.setVec3("lightColor", 1.0f, 1.0f, 1.0f);
 		phongShader.setVec3("lightPos", lightPos);
 		phongShader.setVec3("viewPos", camera.Position);
+
+		// light properties
+		glm::vec3 lightColor;
+		lightColor.x = sin(glfwGetTime() * 2.0f);
+		lightColor.y = sin(glfwGetTime() * 0.7f);
+		lightColor.z = sin(glfwGetTime() * 1.3f);
+		glm::vec3 diffuseColor = lightColor * glm::vec3(0.5f);
+		glm::vec3 ambientColor = diffuseColor * glm::vec3(0.2f);
+		phongShader.setVec3("light.ambient", ambientColor);
+		phongShader.setVec3("light.diffuse", diffuseColor);
+		phongShader.setVec3("light.specular", 1.0f, 1.0f, 1.0f);
+
+		// material properties
+		phongShader.setVec3("material.ambient", 1.0f, 0.5f, 0.31f);
+		phongShader.setVec3("material.diffuse", 1.0f, 0.5f, 0.31f);
+		phongShader.setVec3("material.specular", 0.5f, 0.5f, 0.5f); // specular lighting doesn't have full effect on this object's material
+		phongShader.setFloat("material.shininess", 32.0f);
 
 		// projection & view
 		glm::mat4 projection = glm::perspective(glm::radians(camera.Zoom), (float)SCREEN_WIDTH / (float)SCREEN_HEIGHT, 0.1f, 100.0f);
@@ -174,17 +189,17 @@ int main()
 		glm::mat4 model = glm::mat4(1.0f);
 		phongShader.setMat4("model", model);
 
-		// render cube
+		// render the cube
 		glBindVertexArray(cubeVAO);
 		glDrawArrays(GL_TRIANGLES, 0, 36);
 
-		// render light box
+		// render the light box
 		lightShader.use();
 		lightShader.setMat4("projection", projection);
 		lightShader.setMat4("view", view);
 		model = glm::mat4(1.0f);
 		model = glm::translate(model, lightPos);
-		model = glm::scale(model, glm::vec3(0.2f));
+		model = glm::scale(model, glm::vec3(0.2f)); // scaled as a smaller cube
 		lightShader.setMat4("model", model);
 
 		glBindVertexArray(lightVAO);
