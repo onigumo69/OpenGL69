@@ -174,8 +174,10 @@
     <ClInclude Include="include\stb_image.h" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="shader\FragmentShader.glsl" />
-    <None Include="shader\VertexShader.glsl" />
+    <None Include="shader\PhongFS.glsl" />
+    <None Include="shader\PhongVS.glsl" />
+    <None Include="shader\PointLightFS.glsl" />
+    <None Include="shader\PointLightVS.glsl" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

@@ -40,7 +40,9 @@
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <None Include="shader\VertexShader.glsl" />
-    <None Include="shader\FragmentShader.glsl" />
+    <None Include="shader\PhongVS.glsl" />
+    <None Include="shader\PhongFS.glsl" />
+    <None Include="shader\PointLightVS.glsl" />
+    <None Include="shader\PointLightFS.glsl" />
   </ItemGroup>
 </Project>
