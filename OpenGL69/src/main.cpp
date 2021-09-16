@@ -196,17 +196,24 @@ int main()
 
 		// be sure to activate shader when setting uniforms/drawing objects
 		phongShader.use();
-		phongShader.setVec3("light.direction", -0.2f, -1.0f, -0.3f);
+		phongShader.setVec3("light.position", camera.Position);
+		phongShader.setVec3("light.direction", camera.Front);
+		phongShader.setFloat("light.cutOff", glm::cos(glm::radians(12.5f)));
 		phongShader.setVec3("viewPos", camera.Position);
 
 		// light properties
-		phongShader.setVec3("light.ambient", 0.2f, 0.2f, 0.2f);
-		phongShader.setVec3("light.diffuse", 0.5f, 0.5f, 0.5f);
+		phongShader.setVec3("light.ambient", 0.1f, 0.1f, 0.1f);
+		// we configure the diffuse intensity slightly higher; the right lighting conditions differ with each lighting method and environment.
+		// each environment and lighting type requires some tweaking to get the best out of your environment.
+		phongShader.setVec3("light.diffuse", 0.8f, 0.8f, 0.8f);
 		phongShader.setVec3("light.specular", 1.0f, 1.0f, 1.0f);
+		phongShader.setFloat("light.constant", 1.0f);
+		phongShader.setFloat("light.linear", 0.09f);
+		phongShader.setFloat("light.quadratic", 0.032f);
 
 		// material properties
 		phongShader.setFloat("material.shininess", 64.0f);
-
+			
 		// projection & view
 		glm::mat4 projection = glm::perspective(glm::radians(camera.Zoom), (float)SCREEN_WIDTH / (float)SCREEN_HEIGHT, 0.1f, 100.0f);
 		glm::mat4 view = camera.GetViewMatrix();
