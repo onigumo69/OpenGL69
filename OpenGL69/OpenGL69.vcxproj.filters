@@ -41,11 +41,14 @@
     <ClInclude Include="include\Mesh.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="include\Model.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <None Include="shader\PhongVS.glsl" />
     <None Include="shader\PhongFS.glsl" />
-    <None Include="shader\PointLightVS.glsl" />
-    <None Include="shader\PointLightFS.glsl" />
+    <None Include="shader\ModelVS.glsl" />
+    <None Include="shader\ModelFS.glsl" />
   </ItemGroup>
 </Project>

@@ -171,14 +171,15 @@
     <ClInclude Include="include\Camera.h" />
     <ClInclude Include="include\glad\glad.h" />
     <ClInclude Include="include\Mesh.h" />
+    <ClInclude Include="include\Model.h" />
     <ClInclude Include="include\Shader.h" />
     <ClInclude Include="include\stb_image.h" />
   </ItemGroup>
   <ItemGroup>
     <None Include="shader\PhongFS.glsl" />
     <None Include="shader\PhongVS.glsl" />
-    <None Include="shader\PointLightFS.glsl" />
-    <None Include="shader\PointLightVS.glsl" />
+    <None Include="shader\ModelFS.glsl" />
+    <None Include="shader\ModelVS.glsl" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
