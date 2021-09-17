@@ -52,5 +52,9 @@
     <None Include="shader\ModelFS.glsl" />
     <None Include="shader\advanced\1_DepthTestingFS.glsl" />
     <None Include="shader\advanced\1_DepthTestingVS.glsl" />
+    <None Include="shader\advanced\2_StencilTestingFS.glsl" />
+    <None Include="shader\advanced\2_StencilTestingVS.glsl" />
+    <None Include="shader\advanced\2_StencilSingleColorFS.glsl" />
+    <None Include="assimp-vc140-mt.dll" />
   </ItemGroup>
 </Project>
