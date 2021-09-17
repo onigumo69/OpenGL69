@@ -50,5 +50,7 @@
     <None Include="shader\PhongFS.glsl" />
     <None Include="shader\ModelVS.glsl" />
     <None Include="shader\ModelFS.glsl" />
+    <None Include="shader\advanced\1_DepthTestingFS.glsl" />
+    <None Include="shader\advanced\1_DepthTestingVS.glsl" />
   </ItemGroup>
 </Project>

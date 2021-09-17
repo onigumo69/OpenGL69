@@ -176,6 +176,8 @@
     <ClInclude Include="include\stb_image.h" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="shader\advanced\1_DepthTestingFS.glsl" />
+    <None Include="shader\advanced\1_DepthTestingVS.glsl" />
     <None Include="shader\PhongFS.glsl" />
     <None Include="shader\PhongVS.glsl" />
     <None Include="shader\ModelFS.glsl" />
