@@ -182,6 +182,8 @@
     <None Include="shader\advanced\2_StencilSingleColorFS.glsl" />
     <None Include="shader\advanced\2_StencilTestingFS.glsl" />
     <None Include="shader\advanced\2_StencilTestingVS.glsl" />
+    <None Include="shader\advanced\3_BlendingFS.glsl" />
+    <None Include="shader\advanced\3_BlendingVS.glsl" />
     <None Include="shader\PhongFS.glsl" />
     <None Include="shader\PhongVS.glsl" />
     <None Include="shader\ModelFS.glsl" />
