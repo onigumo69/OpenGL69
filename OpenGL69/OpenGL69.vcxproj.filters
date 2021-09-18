@@ -58,5 +58,9 @@
     <None Include="assimp-vc140-mt.dll" />
     <None Include="shader\advanced\3_BlendingFS.glsl" />
     <None Include="shader\advanced\3_BlendingVS.glsl" />
+    <None Include="shader\advanced\4_FrameBufferFS.glsl" />
+    <None Include="shader\advanced\4_FrameBufferVS.glsl" />
+    <None Include="shader\advanced\4_FrameBufferScreenFS.glsl" />
+    <None Include="shader\advanced\4_FrameBufferScreenVS.glsl" />
   </ItemGroup>
 </Project>
