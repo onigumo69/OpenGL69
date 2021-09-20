@@ -194,6 +194,10 @@
     <None Include="shader\advanced\6_AsteroidVS.glsl" />
     <None Include="shader\advanced\6_PlanetFS.glsl" />
     <None Include="shader\advanced\6_PlanetVS.glsl" />
+    <None Include="shader\advanced\7_AntiAliasingFS.glsl" />
+    <None Include="shader\advanced\7_AntiAliasingVS.glsl" />
+    <None Include="shader\advanced\8_BlinnPhongFS.glsl" />
+    <None Include="shader\advanced\8_BlinnPhongVS.glsl" />
     <None Include="shader\PhongFS.glsl" />
     <None Include="shader\PhongVS.glsl" />
     <None Include="shader\ModelFS.glsl" />
