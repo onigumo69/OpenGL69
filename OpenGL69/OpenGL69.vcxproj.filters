@@ -62,5 +62,7 @@
     <None Include="shader\advanced\4_FrameBufferVS.glsl" />
     <None Include="shader\advanced\4_FrameBufferScreenFS.glsl" />
     <None Include="shader\advanced\4_FrameBufferScreenVS.glsl" />
+    <None Include="shader\advanced\5_InstancingFS.glsl" />
+    <None Include="shader\advanced\5_InstancingVS.glsl" />
   </ItemGroup>
 </Project>
