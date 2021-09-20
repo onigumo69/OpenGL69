@@ -64,5 +64,9 @@
     <None Include="shader\advanced\4_FrameBufferScreenVS.glsl" />
     <None Include="shader\advanced\5_InstancingFS.glsl" />
     <None Include="shader\advanced\5_InstancingVS.glsl" />
+    <None Include="shader\advanced\6_AsteroidFS.glsl" />
+    <None Include="shader\advanced\6_AsteroidVS.glsl" />
+    <None Include="shader\advanced\6_PlanetFS.glsl" />
+    <None Include="shader\advanced\6_PlanetVS.glsl" />
   </ItemGroup>
 </Project>
