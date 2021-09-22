@@ -36,6 +36,9 @@
     <ClCompile Include="src\ResourceManager.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="src\SpriteRenderer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="include\glad\glad.h">
@@ -68,6 +71,9 @@
     <ClInclude Include="include\ft2build.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="include\SpriteRenderer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <None Include="shader\PhongVS.glsl" />
@@ -98,5 +104,7 @@
     <None Include="shader\advanced\8_BlinnPhongVS.glsl" />
     <None Include="shader\advanced\9_TextFS.glsl" />
     <None Include="shader\advanced\9_TextVS.glsl" />
+    <None Include="shader\SpriteFS.glsl" />
+    <None Include="shader\SpriteVS.glsl" />
   </ItemGroup>
 </Project>
