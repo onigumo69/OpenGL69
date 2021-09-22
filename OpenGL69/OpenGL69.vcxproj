@@ -164,6 +164,8 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="src\Game.cpp" />
+    <ClCompile Include="src\GameLevel.cpp" />
+    <ClCompile Include="src\GameObject.cpp" />
     <ClCompile Include="src\main.cpp" />
     <ClCompile Include="src\glad.c" />
     <ClCompile Include="src\ResourceManager.cpp" />
@@ -176,6 +178,8 @@
     <ClInclude Include="include\Camera.h" />
     <ClInclude Include="include\ft2build.h" />
     <ClInclude Include="include\Game.h" />
+    <ClInclude Include="include\GameLevel.h" />
+    <ClInclude Include="include\GameObject.h" />
     <ClInclude Include="include\glad\glad.h" />
     <ClInclude Include="include\Mesh.h" />
     <ClInclude Include="include\Model.h" />
