@@ -163,17 +163,25 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="src\Game.cpp" />
     <ClCompile Include="src\main.cpp" />
     <ClCompile Include="src\glad.c" />
+    <ClCompile Include="src\ResourceManager.cpp" />
+    <ClCompile Include="src\Shader.cpp" />
     <ClCompile Include="src\stb_image.cpp" />
+    <ClCompile Include="src\Texture.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="include\Camera.h" />
+    <ClInclude Include="include\ft2build.h" />
+    <ClInclude Include="include\Game.h" />
     <ClInclude Include="include\glad\glad.h" />
     <ClInclude Include="include\Mesh.h" />
     <ClInclude Include="include\Model.h" />
+    <ClInclude Include="include\ResourceManager.h" />
     <ClInclude Include="include\Shader.h" />
     <ClInclude Include="include\stb_image.h" />
+    <ClInclude Include="include\Texture.h" />
   </ItemGroup>
   <ItemGroup>
     <None Include="assimp-vc140-mt.dll" />
