@@ -72,5 +72,7 @@
     <None Include="shader\advanced\7_AntiAliasingVS.glsl" />
     <None Include="shader\advanced\8_BlinnPhongFS.glsl" />
     <None Include="shader\advanced\8_BlinnPhongVS.glsl" />
+    <None Include="shader\advanced\9_TextFS.glsl" />
+    <None Include="shader\advanced\9_TextVS.glsl" />
   </ItemGroup>
 </Project>
