@@ -3,6 +3,7 @@
 #include <GLFW/glfw3.h>
 
 #include "GameLevel.h"
+#include "PowerUp.h"
 
 // Represents the current state of the game
 enum GameState {
@@ -18,7 +19,6 @@ enum Direction {
     DOWN,
     LEFT
 };
-
 // Defines a Collision typedef that represents collision data
 typedef std::tuple<bool, Direction, glm::vec2> Collision; // <collision?, what direction?, difference vector center - closest point>
 
@@ -42,6 +42,7 @@ public:
     bool                    Keys[1024];
     unsigned int            Width, Height;
     std::vector<GameLevel>  Levels;
+    std::vector<PowerUp>    PowerUps;
     unsigned int            Level;
     // constructor/destructor
     Game(unsigned int width, unsigned int height);
@@ -52,10 +53,11 @@ public:
     void ProcessInput(float dt);
     void Update(float dt);
     void Render();
-
     void DoCollisions();
-
     // reset
     void ResetLevel();
     void ResetPlayer();
+    // powerups
+    void SpawnPowerUps(GameObject& block);
+    void UpdatePowerUps(float dt);
 };

@@ -189,6 +189,7 @@
     <ClInclude Include="include\Model.h" />
     <ClInclude Include="include\ParticleGenerator.h" />
     <ClInclude Include="include\PostProcessor.h" />
+    <ClInclude Include="include\PowerUp.h" />
     <ClInclude Include="include\ResourceManager.h" />
     <ClInclude Include="include\Shader.h" />
     <ClInclude Include="include\SpriteRenderer.h" />
