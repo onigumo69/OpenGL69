@@ -175,6 +175,7 @@
     <ClCompile Include="src\Shader.cpp" />
     <ClCompile Include="src\SpriteRenderer.cpp" />
     <ClCompile Include="src\stb_image.cpp" />
+    <ClCompile Include="src\TextRenderer.cpp" />
     <ClCompile Include="src\Texture.cpp" />
   </ItemGroup>
   <ItemGroup>
@@ -194,6 +195,7 @@
     <ClInclude Include="include\Shader.h" />
     <ClInclude Include="include\SpriteRenderer.h" />
     <ClInclude Include="include\stb_image.h" />
+    <ClInclude Include="include\TextRenderer.h" />
     <ClInclude Include="include\Texture.h" />
   </ItemGroup>
   <ItemGroup>
@@ -231,6 +233,8 @@
     <None Include="shader\PostProcessingVS.glsl" />
     <None Include="shader\SpriteFS.glsl" />
     <None Include="shader\SpriteVS.glsl" />
+    <None Include="shader\Text2DFS.glsl" />
+    <None Include="shader\Text2DVS.glsl" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

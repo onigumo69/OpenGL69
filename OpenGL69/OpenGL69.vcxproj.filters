@@ -54,6 +54,9 @@
     <ClCompile Include="src\PostProcessor.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="src\TextRenderer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="include\glad\glad.h">
@@ -107,6 +110,9 @@
     <ClInclude Include="include\PowerUp.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="include\TextRenderer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <None Include="shader\PhongVS.glsl" />
@@ -143,5 +149,7 @@
     <None Include="shader\ParticleFS.glsl" />
     <None Include="shader\PostProcessingFS.glsl" />
     <None Include="shader\PostProcessingVS.glsl" />
+    <None Include="shader\Text2DFS.glsl" />
+    <None Include="shader\Text2DVS.glsl" />
   </ItemGroup>
 </Project>
