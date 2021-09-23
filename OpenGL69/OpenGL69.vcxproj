@@ -170,6 +170,7 @@
     <ClCompile Include="src\main.cpp" />
     <ClCompile Include="src\glad.c" />
     <ClCompile Include="src\ParticleGenerator.cpp" />
+    <ClCompile Include="src\PostProcessor.cpp" />
     <ClCompile Include="src\ResourceManager.cpp" />
     <ClCompile Include="src\Shader.cpp" />
     <ClCompile Include="src\SpriteRenderer.cpp" />
@@ -187,6 +188,7 @@
     <ClInclude Include="include\Mesh.h" />
     <ClInclude Include="include\Model.h" />
     <ClInclude Include="include\ParticleGenerator.h" />
+    <ClInclude Include="include\PostProcessor.h" />
     <ClInclude Include="include\ResourceManager.h" />
     <ClInclude Include="include\Shader.h" />
     <ClInclude Include="include\SpriteRenderer.h" />
@@ -224,6 +226,8 @@
     <None Include="shader\PhongVS.glsl" />
     <None Include="shader\ModelFS.glsl" />
     <None Include="shader\ModelVS.glsl" />
+    <None Include="shader\PostProcessingFS.glsl" />
+    <None Include="shader\PostProcessingVS.glsl" />
     <None Include="shader\SpriteFS.glsl" />
     <None Include="shader\SpriteVS.glsl" />
   </ItemGroup>
