@@ -48,6 +48,9 @@
     <ClCompile Include="src\BallObject.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="src\ParticleGenerator.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="include\glad\glad.h">
@@ -92,6 +95,9 @@
     <ClInclude Include="include\BallObject.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="include\ParticleGenerator.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <None Include="shader\PhongVS.glsl" />
@@ -124,5 +130,7 @@
     <None Include="shader\advanced\9_TextVS.glsl" />
     <None Include="shader\SpriteFS.glsl" />
     <None Include="shader\SpriteVS.glsl" />
+    <None Include="shader\ParticleVS.glsl" />
+    <None Include="shader\ParticleFS.glsl" />
   </ItemGroup>
 </Project>
